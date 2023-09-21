@@ -35,11 +35,13 @@
                 $resultado = mysqli_query($conexao, $sql);
 
                 mysqli_close($conexao);
+
+                header("Location:sucesso.php");
                 
                 //if (empty($nome) || empty($matricula) || empty($curso) || empty($email) || empty($telefone) || empty($endereco)){
                   //  header("Location: falha.php");
                     //exit;
-                //} else {
+                //} else if {
                   //  header("Location: sucesso.php");
                     //exit;
                 //}
@@ -48,8 +50,6 @@
                     //exit;
                 //}
             
-
-           
         ?>
     </main>
     
