@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisando Cadastros por Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="pesquisa" action="pesquisa.php" method="post">
+        <label>Selecione o Campo de Pesquisa:</label>
+        <select name="coluna" id="coluna">
+            <option value="nome">Nome</option>
+            <option value="matricula">Matricula</option>
+            <option value="curso">Curso</option>
+            <option value="email">Email</option>
+            <option value="telefone">Telefone</option>
+            <option value="endereço">Endereço</option>
+            <option value="cep">CEP</option>
+            <option value="uf">UF</option>
+            <option value="CursoHora">Carga-Horária</option>
+        </select><br>
+        <label for="dado">Dado: </label>
+            <input type="text" name="dado" >
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+    <script></script>
+</body>
+</html>
