@@ -21,14 +21,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             
             $usuario = $sql_query->fetch_assoc();
 
-            echo $usuario;
-
             if(!isset($_SESSION)) {
                 session_start();
             }
 
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['email'] = $usuario['email'];
+            $_SESSION['senha'] = $usuario['senha'];
 
             header("Location: painel.php");
 
@@ -61,6 +59,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         </p>
         <p>
             <button type="submit">Entrar</button>
+        </p>
+        <p>
+            <button type="button" onclick="<a href='cadastro.php'></a>">Criar Login</button>
         </p>
     </form>
     
